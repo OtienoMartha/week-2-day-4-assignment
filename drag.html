@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>Priority List</h1>
+        <p class="subtitle">Drag items to reorder them. Numbers update automatically.</p>
+
+        <ul class="priority-list" id="priority-list">
+            <li draggable="true">
+                <span class="priority">1.</span>
+                <span class="task-text">Deploy website</span>
+                <span class="drag-handle">⋮⋮</span>
+            </li>
+            <li draggable="true">
+                <span class="priority">2.</span>
+                <span class="task-text">Fix login bug</span>
+                <span class="drag-handle">⋮⋮</span>
+            </li>
+            <li draggable="true">
+                <span class="priority">3.</span>
+                <span class="task-text">Write tests</span>
+                <span class="drag-handle">⋮⋮</span>
+            </li>
+            <li draggable="true">
+                <span class="priority">4.</span>
+                <span class="task-text">Update documentation</span>
+                <span class="drag-handle">⋮⋮</span>
+            </li>
+            <li draggable="true">
+                <span class="priority">5.</span>
+                <span class="task-text">Review pull requests</span>
+                <span class="drag-handle">⋮⋮</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="drag.js"></script>
+</body>
+</html>

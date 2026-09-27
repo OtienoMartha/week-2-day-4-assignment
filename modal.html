@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Bonus: theme toggle -->
+        <div class="top-bar">
+            <button id="theme-toggle" class="theme-toggle" type="button">🌙 Dark mode</button>
+        </div>
+
+        <h1>Learn More</h1>
+        <p class="subtitle">Click a topic below to open a modal.</p>
+
+        <!-- Three buttons, each opens a different modal -->
+        <div class="learn-buttons">
+            <button class="btn" data-modal="modal-html" type="button">About HTML</button>
+            <button class="btn" data-modal="modal-css"  type="button">About CSS</button>
+            <button class="btn" data-modal="modal-js"   type="button">About JavaScript</button>
+        </div>
+
+    </div>
+
+    <!-- Single overlay containing three modal boxes.
+         Only one is shown at a time via the .active class. -->
+    <div class="modal-overlay" id="overlay">
+
+        <div class="modal" id="modal-html">
+            <h2>About HTML</h2>
+            <p>HTML (HyperText Markup Language) is the structure of every web page. It describes what content is on the page — headings, paragraphs, images, links — using tags. Without HTML, there is no page to style or make interactive.</p>
+            <button class="btn modal-close" type="button">Close</button>
+        </div>
+
+        <div class="modal" id="modal-css">
+            <h2>About CSS</h2>
+            <p>CSS (Cascading Style Sheets) controls how the page looks — colours, spacing, typography, and layout. It separates presentation from structure, letting you restyle the same HTML in completely different ways.</p>
+            <button class="btn modal-close" type="button">Close</button>
+        </div>
+
+        <div class="modal" id="modal-js">
+            <h2>About JavaScript</h2>
+            <p>JavaScript makes pages interactive. It responds to clicks, validates forms, updates content on the fly, and much more. Every modern web application is powered by JavaScript running in your browser.</p>
+            <button class="btn modal-close" type="button">Close</button>
+        </div>
+
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>Create Account</h1>
+        <p class="subtitle">All fields must pass validation before you can submit.</p>
+
+        <form id="register-form" novalidate>
+
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Martha Otieno" autocomplete="name">
+                <span class="status-icon" id="name-icon"></span>
+                <p class="error-text" id="name-error"></p>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="marthaoti0207gmail.com" autocomplete="email">
+                <span class="status-icon" id="email-icon"></span>
+                <p class="error-text" id="email-error"></p>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone (Kenyan)</label>
+                <input type="tel" id="phone" name="phone" placeholder="0791172121" autocomplete="tel">
+                <span class="status-icon" id="phone-icon"></span>
+                <p class="error-text" id="phone-error"></p>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="At least 8 characters" autocomplete="new-password">
+                <span class="status-icon" id="password-icon"></span>
+                <p class="error-text" id="password-error"></p>
+            </div>
+
+            <button type="submit" id="submit-btn" class="btn" disabled>Create Account</button>
+
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
